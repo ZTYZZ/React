@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+	
+<head>
+<title>Tabs组件搭建</title>
+<meta charset="utf-8">
+<style>
+	
+	.tabs-bar {
+		margin-bottom: 16px;
+	}
+	.tabs-nav {
+		font-size: 14px;
+		overflow: auto;
+	}
+	.tabs-nav li {
+		float: left;
+		list-style: none;
+		margin-right: 24px;
+		padding: 8px 20px;
+		text-decoration: none;
+		color: #666;
+		cursor: pointer;	
+	}
+	.tabs-nav li.active {
+		border-bottom: 2px solid #00C49F;
+		color: #00C49F;
+		cursor: default;
+	}
+
+	.tabs-content .tabs-panel {
+		display: none;
+	}
+
+	.tabs-content .active {
+		display: block;
+	}
+</style>
+</head>
+<body>
+	<div id="tab-demo">
+		<div class="tabs-bar" role="tablist">
+			<ul class="tabs-nav">
+				<li role="tab" class="tabs-tab">Tab1</li>
+				<li role="tab" class="tabs-tab">Tab2</li>
+				<li role="tab" class="tabs-tab">Tab3</li>
+			</ul>
+		</div>
+	
+
+	<div class="tabs-content">
+		<div role="tabpanel" class="tabs-panel">
+			第一个Tab里面的内容
+		</div>
+		<div role="tabpanel" class="tabs-panel">
+			第二个Tab里面的内容
+		</div>
+		<div role="tabpanel" class="tabs-panel">
+			第三个Tab里面的内容
+		</div>
+	</div>
+</div>
+<script src="js/app.js"></script>
+</body>
+
+</html>
